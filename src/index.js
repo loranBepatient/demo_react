@@ -180,3 +180,30 @@ console.log(square2(10));
 // console.log(Snape.degree);
 // console.log(Snape.teach());
  */
+
+/* // ASYNC AWAIT FOR PROMISES
+// const cookEgg = egg =>
+//   new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       if (egg === "egg") {
+//         resolve("your egg is ready");
+//       } else {
+//         reject("nothing to cook");
+//       }
+//     }, 1000);
+//   });
+
+// cookEgg("egg")
+//   .then(result => console.log(result))
+//   .catch(ex => console.error(ex));
+
+// const cookEgg2 = async egg => {
+//   try {
+//     const myEgg = await cookEgg(egg);
+//     console.log(myEgg);
+//   } catch (err) {
+//     console.log(err);
+//   }
+// };
+
+// cookEgg2("egsdf"); */
