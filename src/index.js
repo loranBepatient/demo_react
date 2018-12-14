@@ -181,21 +181,25 @@ console.log(square2(10));
 // console.log(Snape.teach());
  */
 
-/* // ASYNC AWAIT FOR PROMISES
-// const cookEgg = egg =>
-//   new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       if (egg === "egg") {
-//         resolve("your egg is ready");
-//       } else {
-//         reject("nothing to cook");
-//       }
-//     }, 1000);
-//   });
+// ASYNC AWAIT FO/* R PROMISES
+const cookEgg = egg =>
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (egg === "egg") {
+        resolve("your egg is ready");
+      } else {
+        reject("this is not an egg");
+      }
+    }, 1000);
+  });
 
-// cookEgg("egg")
-//   .then(result => console.log(result))
-//   .catch(ex => console.error(ex));
+// function prepareBreakfast() {
+//   cookEgg("egg")
+//     .then(result => console.log(result))
+//     .catch(ex => console.error(ex));
+// }
+
+// prepareBreakfast();
 
 // const cookEgg2 = async egg => {
 //   try {
@@ -206,4 +210,18 @@ console.log(square2(10));
 //   }
 // };
 
-// cookEgg2("egsdf"); */
+// async function prepareBreakfast() {
+//   const cookedEgg = await cookEgg("egg");
+//   console.log(cookedEgg);
+// }
+
+// async function prepareBreakfast() {
+//   try {
+//     const cookedEgg = await cookEgg("egg");
+//     console.log(cookedEgg);
+//   } catch (ex) {
+//     console.error(ex);
+//   }
+// }
+
+// prepareBreakfast(); */
