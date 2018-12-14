@@ -21,22 +21,22 @@ class Counters extends Component {
   };
   render() {
     return (
-      //   <div>
-      //     <Counter />
-      //     <Counter />
-      //     <Counter />
-      //     <Counter />
-      //   </div>
       <div>
-        {this.state.counters.map(counter => (
-          <Counter
-            key={counter.id}
-            value={counter.value}
-            id={counter.id}
-            onDelete={this.onDelete}
-          />
-        ))}
+        <Counter />
+        <Counter />
+        <Counter />
+        <Counter />
       </div>
+      // <div>
+      //   {this.state.counters.map(counter => (
+      //     <Counter
+      //       key={counter.id}
+      //       value={counter.value}
+      //       id={counter.id}
+      //       onDelete={this.onDelete}
+      //     />
+      //   ))}
+      // </div>
     );
   }
 }
